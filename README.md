@@ -12,12 +12,6 @@ The goal is to practice core AWS architecture concepts such as VPC design, publi
 
 ---
 
-## Target Architecture
-
-Coming soon.
-
----
-
 ## AWS Services
 
 - Amazon VPC
@@ -37,11 +31,30 @@ Coming soon.
 
 **v0.1**
 
-### Status
+## Project Progress
 
-Project structure initialized.
-
+| Sprint | Description | Status |
+|---------|-------------|--------|
+| Sprint 1 | Network Foundation | ✅ Completed |
+| Sprint 2 | Compute Layer | ⏳ Pending |
+| Sprint 3 | Application Load Balancer | ⏳ Pending |
+| Sprint 4 | Auto Scaling | ⏳ Pending |
+| Sprint 5 | Database Layer | ⏳ Pending |
+| Sprint 6 | Documentation & Final Review | ⏳ Pending |
 ---
+
+## Completed
+
+### Sprint 1
+
+- Amazon VPC
+- Internet Gateway
+- Public Subnets
+- Private Subnets
+- Public Route Table
+- Private Route Table
+- NAT Gateway
+
 
 ## Project Structure
 
