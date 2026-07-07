@@ -29,7 +29,7 @@ The goal is to practice core AWS architecture concepts such as VPC design, publi
 
 ## Current Version
 
-**v0.5**
+**v1.0**
 
 ## Project Progress
 
@@ -39,9 +39,8 @@ The goal is to practice core AWS architecture concepts such as VPC design, publi
 | Sprint 2 | Compute Layer | ✅ Completed |
 | Sprint 3 | Application Load Balancer | ✅ Completed |
 | Sprint 4 | Auto Scaling Group | ✅ Completed |
-| Sprint 5 | Database Layer | ⏳ Pending |
-| Sprint 6 | Monitoring & Final Review | ⏳ Pending |
-
+| Sprint 5 | Database Layer | ✅ Completed |
+| Sprint 6 | Documentation & Architecture Review | ✅ Completed |
 ## Completed
 
 ### Sprint 1
@@ -83,6 +82,22 @@ The goal is to practice core AWS architecture concepts such as VPC design, publi
 - Target Tracking Scaling Policy
 - Self-Healing Infrastructure
 - Automatic Instance Replacement
+
+## Sprint 5
+
+- Amazon RDS MySQL
+- Private Database Subnets
+- DB Subnet Group
+- Private Database Endpoint
+- Secure EC2 to RDS Connectivity
+
+### Sprint 6
+
+- CloudWatch Dashboard
+- CloudWatch Alarm
+- EC2 Monitoring
+- ALB Metrics
+- RDS Metrics
 
 ## Project Structure
 

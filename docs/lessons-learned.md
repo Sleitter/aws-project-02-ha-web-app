@@ -40,3 +40,24 @@
 - Launch Templates should not define subnets; subnet placement is controlled by the Auto Scaling Group.
 - Self-healing infrastructure eliminates manual server recovery.
 - High Availability requires automation in addition to redundancy.
+
+# Sprint 5 - Lessons Learned
+
+- Amazon RDS uses DNS endpoints instead of static IP addresses.
+- DB Subnet Groups define where RDS instances can be deployed.
+- RDS should remain private whenever possible.
+- Security Groups should restrict database access to application servers only.
+- EC2 instances communicate with RDS using the private endpoint inside the VPC.
+- Database connectivity should always be validated from the application layer.
+- Separating the application and database tiers improves security and architecture design.
+
+# Sprint 6 - Lessons Learned
+
+- A well-designed architecture should remain simple while meeting business requirements.
+- High Availability requires redundancy, health checks, and automation.
+- Auto Scaling Groups manage capacity rather than individual instances.
+- Load Balancers distribute traffic only to healthy targets.
+- Security Groups provide resource-level protection inside a VPC.
+- Private databases should never be exposed directly to the Internet.
+- RDS endpoints provide flexibility by abstracting the underlying infrastructure.
+- Infrastructure documentation is as important as the deployment itself.

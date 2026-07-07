@@ -30,3 +30,11 @@ No issues were encountered during Sprint 3.
 # Sprint 4
 
 No issues were encountered during Sprint 4.
+
+# Sprint 5
+
+No issues were encountered during Sprint 5.
+
+# Sprint 6
+
+No issues were encountered during Sprint 6.

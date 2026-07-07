@@ -151,3 +151,68 @@ Replace manually managed EC2 instances with an Auto Scaling Group capable of aut
 - Application Load Balancer routed traffic to the new instances.
 - Manual termination of an Auto Scaling instance triggered automatic replacement.
 - High availability was maintained throughout the test.
+
+# Sprint 5 - Database Layer
+
+## Objective
+
+Deploy a private Amazon RDS MySQL database and integrate it securely with the web application layer.
+
+## Resources Created
+
+- Amazon RDS MySQL
+- DB Subnet Group
+- RDS Security Group
+
+## Configuration
+
+### Amazon RDS
+
+- Engine: MySQL Community 8.4.9
+- Deployment: Single-AZ
+- Instance Type: db.t3.micro
+- Storage: 20 GB gp3
+- Public Access: Disabled
+- Backup Retention: 1 Day
+
+### Security
+
+- Private DB Subnet Group
+- Dedicated Security Group
+- MySQL (3306) allowed only from the EC2 Security Group
+
+## Validation
+
+- RDS instance deployed successfully.
+- Database endpoint resolved correctly.
+- EC2 instance connected successfully to RDS.
+- MySQL authentication completed.
+- Database "hocdb" verified.
+- Internet access to the database remained disabled.
+
+# Sprint 6 - Documentation & Final Review
+
+## Objective
+
+Finalize the project documentation, review the architecture, and prepare the repository for publication.
+
+## Activities Completed
+
+- Updated the project documentation.
+- Reviewed the final AWS architecture.
+- Updated the architecture diagram.
+- Organized project screenshots.
+- Verified all infrastructure components.
+- Prepared the repository for GitHub publication.
+
+## Final Validation
+
+- VPC configured correctly.
+- Public and private subnets verified.
+- NAT Gateway providing outbound Internet access.
+- Bastion Host providing administrative access.
+- Application Load Balancer distributing traffic.
+- Auto Scaling Group maintaining desired capacity.
+- Launch Template deploying web servers automatically.
+- Amazon RDS accessible only from the application tier.
+- Complete three-tier architecture validated.
