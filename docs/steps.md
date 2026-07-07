@@ -106,3 +106,48 @@ Deploy a highly available Application Load Balancer capable of distributing inco
 - Target Group registered both EC2 instances
 - Health checks passed
 - Traffic distributed between EC2 A and EC2 B
+
+# Sprint 4 - Auto Scaling Group
+
+## Objective
+
+Replace manually managed EC2 instances with an Auto Scaling Group capable of automatically launching, replacing, and maintaining web servers across multiple Availability Zones.
+
+## Resources Created
+
+- Launch Template
+- Auto Scaling Group
+- Target Tracking Scaling Policy
+
+## Configuration
+
+### Launch Template
+
+- Amazon Linux 2023
+- t3.micro
+- Apache installed through User Data
+- Existing EC2 Key Pair
+- Private EC2 Security Group
+
+### Auto Scaling Group
+
+- Desired Capacity: 2
+- Minimum Capacity: 2
+- Maximum Capacity: 4
+- Multi-AZ Deployment
+- Associated with existing Target Group
+
+### Scaling Policy
+
+- Target Tracking
+- Average CPU Utilization: 50%
+
+## Validation
+
+- Auto Scaling Group launched two EC2 instances automatically.
+- Instances executed the User Data successfully.
+- Apache was installed automatically.
+- New instances registered in the Target Group.
+- Application Load Balancer routed traffic to the new instances.
+- Manual termination of an Auto Scaling instance triggered automatic replacement.
+- High availability was maintained throughout the test.

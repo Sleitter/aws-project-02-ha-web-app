@@ -29,7 +29,7 @@ The goal is to practice core AWS architecture concepts such as VPC design, publi
 
 ## Current Version
 
-**v0.4**
+**v0.5**
 
 ## Project Progress
 
@@ -38,10 +38,9 @@ The goal is to practice core AWS architecture concepts such as VPC design, publi
 | Sprint 1 | Network Architecture | ✅ Completed |
 | Sprint 2 | Compute Layer | ✅ Completed |
 | Sprint 3 | Application Load Balancer | ✅ Completed |
-| Sprint 4 | Auto Scaling | ⏳ Pending |
+| Sprint 4 | Auto Scaling Group | ✅ Completed |
 | Sprint 5 | Database Layer | ⏳ Pending |
 | Sprint 6 | Monitoring & Final Review | ⏳ Pending |
----
 
 ## Completed
 
@@ -76,6 +75,14 @@ The goal is to practice core AWS architecture concepts such as VPC design, publi
 - Multi-AZ Load Balancing
 - End-to-End Validation
 
+### Sprint 4
+
+- Launch Template
+- User Data Automation
+- Auto Scaling Group
+- Target Tracking Scaling Policy
+- Self-Healing Infrastructure
+- Automatic Instance Replacement
 
 ## Project Structure
 

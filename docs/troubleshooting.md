@@ -26,3 +26,7 @@ Copied the private key securely to the Bastion Host for lab purposes and updated
 # Sprint 3
 
 No issues were encountered during Sprint 3.
+
+# Sprint 4
+
+No issues were encountered during Sprint 4.

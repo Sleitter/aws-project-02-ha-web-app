@@ -29,3 +29,14 @@
 - Security Groups should allow HTTP traffic only from the ALB Security Group.
 - Round Robin distributes traffic across healthy targets.
 - High Availability requires resources deployed across multiple Availability Zones.
+
+# Sprint 4 - Lessons Learned
+
+- Launch Templates define how new EC2 instances are created.
+- Auto Scaling Groups manage the desired application capacity rather than individual servers.
+- User Data allows new instances to configure themselves automatically during launch.
+- Auto Scaling automatically replaces unhealthy or terminated instances.
+- Application Load Balancers distribute traffic only to healthy targets.
+- Launch Templates should not define subnets; subnet placement is controlled by the Auto Scaling Group.
+- Self-healing infrastructure eliminates manual server recovery.
+- High Availability requires automation in addition to redundancy.
