@@ -72,3 +72,37 @@ Deploy the compute layer for the application while keeping the web servers isola
 - Internet connectivity through NAT Gateway
 - Apache service running successfully
 - Custom landing page deployed automatically via User Data
+
+# Sprint 3 - Application Load Balancer
+
+## Objective
+
+Deploy a highly available Application Load Balancer capable of distributing incoming traffic across multiple EC2 instances running in private subnets.
+
+## Resources Created
+
+- Application Load Balancer
+- Target Group
+- ALB Security Group
+
+## Configuration
+
+### Application Load Balancer
+
+- Internet-facing
+- IPv4
+- Two Public Subnets
+- HTTP Listener (Port 80)
+
+### Target Group
+
+- Instance Target Type
+- HTTP Port 80
+- Health Check Path (/)
+
+## Validation
+
+- ALB deployed successfully
+- Target Group registered both EC2 instances
+- Health checks passed
+- Traffic distributed between EC2 A and EC2 B

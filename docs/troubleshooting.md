@@ -22,3 +22,7 @@ The Bastion Host did not have access to the private key required to authenticate
 Copied the private key securely to the Bastion Host for lab purposes and updated its permissions before initiating the SSH connection.
 
 > Note: In production environments, SSH Agent Forwarding or AWS Systems Manager Session Manager is recommended instead of storing private keys on a Bastion Host.
+
+# Sprint 3
+
+No issues were encountered during Sprint 3.

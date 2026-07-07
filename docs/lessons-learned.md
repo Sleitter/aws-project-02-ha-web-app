@@ -19,3 +19,13 @@
 - EC2 User Data allows automatic software installation and configuration during the first boot.
 - Apache can be automatically deployed using EC2 User Data scripts.
 - Route Tables, Security Groups, and NAT Gateway must all be configured correctly for outbound Internet access from private instances.
+
+# Sprint 3 - Lessons Learned
+
+- Application Load Balancers should be deployed in public subnets.
+- Backend application servers can remain in private subnets.
+- Target Groups decouple the Load Balancer from the backend instances.
+- Health Checks automatically determine whether an instance should receive traffic.
+- Security Groups should allow HTTP traffic only from the ALB Security Group.
+- Round Robin distributes traffic across healthy targets.
+- High Availability requires resources deployed across multiple Availability Zones.
