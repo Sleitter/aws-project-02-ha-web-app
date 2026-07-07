@@ -9,3 +9,13 @@
 - NAT Gateway uses an Elastic IP to translate private IP addresses into a public address.
 - NAT Gateway only allows outbound connections initiated from private resources.
 - Route Tables determine how traffic flows inside and outside a VPC.
+
+# Sprint 2 - Lessons Learned
+
+- Bastion Hosts provide secure administrative access to private instances.
+- Security Groups can reference other Security Groups instead of IP addresses.
+- Private EC2 instances can access the Internet through a NAT Gateway without having public IP addresses.
+- The Internet Gateway provides Internet connectivity, while the NAT Gateway performs address translation.
+- EC2 User Data allows automatic software installation and configuration during the first boot.
+- Apache can be automatically deployed using EC2 User Data scripts.
+- Route Tables, Security Groups, and NAT Gateway must all be configured correctly for outbound Internet access from private instances.

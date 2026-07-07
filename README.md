@@ -29,14 +29,14 @@ The goal is to practice core AWS architecture concepts such as VPC design, publi
 
 ## Current Version
 
-**v0.1**
+**v0.3**
 
 ## Project Progress
 
 | Sprint | Description | Status |
 |---------|-------------|--------|
-| Sprint 1 | Network Foundation | ✅ Completed |
-| Sprint 2 | Compute Layer | ⏳ Pending |
+| Sprint 1 | Network Architecture | ✅ Completed |
+| Sprint 2 | Compute Layer | ✅ Completed |
 | Sprint 3 | Application Load Balancer | ⏳ Pending |
 | Sprint 4 | Auto Scaling | ⏳ Pending |
 | Sprint 5 | Database Layer | ⏳ Pending |
@@ -55,6 +55,16 @@ The goal is to practice core AWS architecture concepts such as VPC design, publi
 - Private Route Table
 - NAT Gateway
 
+### Sprint 2
+
+- Bastion Host
+- Private EC2 A
+- Private EC2 B
+- Security Groups
+- User Data Automation
+- Apache HTTP Server
+- SSH Validation
+- NAT Gateway Validation
 
 ## Project Structure
 
